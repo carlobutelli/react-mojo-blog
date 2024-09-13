@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs all the required dependencies
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -68,3 +72,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Custom Sever
+Create a directory data into the main folder and a file db.json inside it.
+Save data in json format into the db file.
+In the terminal run
+
+`npx json-server --watch data/db.json --port 8000`
+
+json-server will read into the file and create a fake endpoint with the data.
+Each main object is a resource.
